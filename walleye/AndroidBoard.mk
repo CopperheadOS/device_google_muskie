@@ -1,4 +1,8 @@
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+KERNEL_DEFCONFIG := walleye-debug_defconfig
+else
 KERNEL_DEFCONFIG := walleye_defconfig
+endif
 KERNEL_DIR := kernel/google/wahoo
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
