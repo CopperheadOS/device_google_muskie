@@ -37,5 +37,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.traced.enable=1
 
-PRODUCT_COPY_FILES += \
-    branding/bootanimation.zip:system/media/bootanimation.zip
+-include branding/branding.mk
